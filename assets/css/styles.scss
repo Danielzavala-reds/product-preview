@@ -1,0 +1,129 @@
+@use './modules/responsive';
+
+$cream: hsl(30, 38%, 92%);
+$white: hsl(0, 0%, 100%);
+$dark-cyan: hsl(158, 36%, 37%);
+$dark-grayish-blue: hsl(228, 12%, 48%);
+
+$fraunces: 'Fraunces', serif;
+$montserrat: 'Montserrat', sans-serif;
+
+
+body,html{
+    background: $cream;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+    height: 98vh;
+    // border: 2px solid red;  
+    margin: 0px auto;
+
+    article{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 398px;
+        width: 531px;
+        
+
+        #show-img{
+
+            height: 450px;
+
+            img{
+                width: 267px;
+                height: 450px;
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+            }
+        }
+
+        #specs{
+            background: $white;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+
+            .content{
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+
+
+                ul{
+                    display: flex;
+                    list-style: none;
+                    padding: 0;
+                    width: 99%;
+                    justify-content: space-around;
+                   
+
+                    li{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        margin: 0;
+                        h1{
+                            font-size: 30px;
+                            font-family: $fraunces;
+                            margin: 0;
+                            margin-right: 12px;
+                            color: $dark-cyan;
+                        }
+                        small{
+                            text-decoration: line-through;
+                            font-size: 15px;
+                            font-family: $fraunces;
+                            color: $dark-grayish-blue;
+                        }
+                    }
+                }
+
+                .btn-container{
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+
+                    button{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: $dark-cyan;
+                        color: $white;
+                        width: 210px;
+                        height: 43px;
+                        border-radius: 10px;
+                        border-style: none;
+                        cursor: pointer;
+                        img{
+                            margin-right: 10px;
+                        }
+                    }
+
+                }
+
+                h2{
+                    font-family: $fraunces;
+                    font-size: 30px;
+                }
+                p,span,button{
+                    font-family: $montserrat;
+                }
+                p{
+                    color: $dark-grayish-blue;
+                    margin-top: -10px;
+                }
+                span{
+                    letter-spacing: 3px;
+                    color: $dark-grayish-blue;
+                }
+            }
+        }
+    }   
+
+}

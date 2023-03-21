@@ -1,0 +1,19 @@
+@media (max-width: 505px) {
+    main{
+        
+        
+
+        article{
+            grid-template-columns: 1fr !important;
+            height: auto !important;
+            padding: 10px;
+
+            #show-img{
+               img{
+                background-image: url(../../images/image-product-mobile.jpg) no-repeat;
+                width: 100% !important;
+               }
+            }
+        }
+    }
+}
